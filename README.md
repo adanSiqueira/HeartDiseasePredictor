@@ -1,12 +1,9 @@
-# HealthDisease
-
+# Heart Disease Prediction Dashboard
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-# Heart Disease Prediction Dashboard
-
-This web application allows users to input clinical data of a patient, such as age, sex, blood pressure, cholesterol, and others, to predict whether the patient is at risk of heart disease using a machine learning model.
+<br>This web application allows users to input clinical data of a patient, such as age, sex, blood pressure, cholesterol, and others, to predict whether the patient is at risk of heart disease using a machine learning model.
 
 ## Features
 The app contains two main sections:

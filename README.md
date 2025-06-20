@@ -28,34 +28,5 @@ The app contains two main sections:
 - **XGBoost** for building the machine learning model.
 - **ucimlrepo API** to fetch the dataset.
 
-## Project Structure:
-```plaintext
-.env
-.gitignore
-app.py
-main.py
-Makefile
-pyproject.toml
-README.md
-requirements.txt
-__init__.py
-
-├───data
-│   ├───data_loader.py
-│   └───__init__.py
-
-├───model
-│   ├───model_HD.pkl
-│   └───model_training.py
-
-├───notebooks
-│   └───HeartDisease_Predictions.ipynb
-
-├───pages
-│   ├───charts.py
-│   ├───form.py
-│   └───__init__.py
-
-├───src
-│   ├───dataset.py
-│   └───__init__.py
+## Project Demonstration:
+![Demonstration](msedge_xYJKkdIWwN.gif)

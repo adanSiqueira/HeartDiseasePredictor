@@ -10,7 +10,7 @@ The app contains two main sections:
 1. **Heart Disease Prediction**:
    - Users can input various clinical metrics.
    - The application uses an **XGBoost** model to predict whether a patient is at risk for heart disease based on these inputs.
-   - The model was trained using data from the Cleveland Clinic Heart Disease dataset.
+   - The model was trained using data from the Cleveland Clinic Heart Disease dataset: https://archive.ics.uci.edu/dataset/45/heart+disease
 
 2. **Graphic Analysis**:
    - Visualizes exploratory analysis of the dataset.

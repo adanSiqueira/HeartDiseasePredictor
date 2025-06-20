@@ -1,7 +1,4 @@
-<p align="center">
-  <h1>Heart Disease Prediction Dashboard</h1>
-</p>
-
+<h1 align="center">Heart Disease Prediction Dashboard</h1>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue">
   <img src="https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white">

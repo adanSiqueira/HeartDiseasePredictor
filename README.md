@@ -25,7 +25,7 @@ The app contains two main sections:
 - **Dash** and **Dash Bootstrap** for the web framework and UI components.
 - **Pandas** and **NumPy** for data manipulation.
 - **Plotly** for interactive visualizations.
-- **XGBoost** for building the machine learning model.
+- **XGBoost API for ScikitLearn** for building the machine learning model.
 - **ucimlrepo API** to fetch the dataset.
 
 ## Project Demonstration:

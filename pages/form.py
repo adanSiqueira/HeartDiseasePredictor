@@ -134,7 +134,7 @@ def predict_disease(n_clicks, age, sex, cp, trestbps, chol, fbs, restecg, thalac
     import pandas as pd
     import numpy as np
 
-    model = joblib.load('HeartDisease\model\model_HD.pkl')
+    model = joblib.load('model\model_HD.pkl')
 
     data = pd.DataFrame({
         'age': [age], 'sex': [sex], 'cp': [cp], 'trestbps': [trestbps], 'chol': [chol], 'fbs': [fbs], 'restecg': [restecg],

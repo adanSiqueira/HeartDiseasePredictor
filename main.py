@@ -33,4 +33,4 @@ def show_page(pathname):
     else:
         return html.P('homepage')
     
-app.run(debug = True)
+app.run(debug = False)

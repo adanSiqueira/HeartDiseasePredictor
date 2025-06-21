@@ -50,7 +50,7 @@ Heart disease remains one of the leading causes of death worldwide. A predictive
 - **Pandas** & **NumPy**: For data manipulation
 - **Plotly**: For interactive visualizations
 - **XGBoost**: For building the classification model
-- **ucimlrepo**: For accessing the UCI dataset programmatically
+- **ucimlrepo API**: For accessing the UCI dataset programmatically
 - **Jupyter Notebook**: For exploratory data analysis and model development
 
 ## Project Demonstration:

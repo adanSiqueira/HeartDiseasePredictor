@@ -10,6 +10,8 @@
 
 This project presents a dynamic and interactive web application for predicting the risk of heart disease based on clinical data. The model and dashboard are built upon a well-known dataset from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/45/heart+disease), derived from angiographic results of 303 patients at the Cleveland Clinic Foundation, Ohio.
 
+---
+
 ## 🔍 Project Overview
 
 This application is divided into two main pages:
@@ -38,6 +40,28 @@ These charts offer valuable insights into the clinical features correlated with 
 
 ---
 
+## 🧠 Model Development and Performance
+
+The initial phase included training and evaluating multiple classification models. After experimentation, **Logistic Regression** proved to be highly effective and was selected for final deployment. The model was trained using a robust pipeline with:
+
+- **StandardScaler** for feature normalization  
+- **Bayesian optimization** (`BayesSearchCV`) for hyperparameter tuning  
+- **Nested cross-validation** for unbiased performance estimation
+
+📈 **Final test set performance (class 1 = heart disease):**
+
+| Metric    | Class 0 | Class 1 |
+|-----------|---------|---------|
+| Precision | 0.90    | 0.86    |
+| Recall    | 0.88    | 0.89    |
+| F1-Score  | 0.89    | 0.88    |
+
+The model achieved **0.89 recall on class 1**, meaning it correctly identified 89% of patients with heart disease — a crucial metric for medical prediction tasks where false negatives are costly.
+
+The ```model``` folder contains a Jupyter Notebook detailing the model development process, including training, evaluation, and optimization.
+
+---
+
 ## 🚀 Why This Project Matters
 
 Heart disease remains one of the leading causes of death worldwide. A predictive tool like this can help medical professionals, students, and data enthusiasts identify risk patterns more quickly and efficiently. By combining explainable machine learning with a user-friendly interface, this project demonstrates the power of applied AI in healthcare diagnostics and education.
@@ -46,25 +70,28 @@ Heart disease remains one of the leading causes of death worldwide. A predictive
 
 ## 🛠️ Technologies Used
 
-- **Dash** & **Dash Bootstrap Components**: For web app development
-- **Pandas** & **NumPy**: For data manipulation
-- **Plotly**: For interactive visualizations
-- **XGBoost**: For building the classification model
-- **ucimlrepo API**: For accessing the UCI dataset programmatically
-- **Jupyter Notebook**: For exploratory data analysis and model development
+- **Dash** & **Dash Bootstrap Components**: For web app development  
+- **Pandas** & **NumPy**: For data manipulation  
+- **Plotly**: For interactive visualizations  
+- **XGBoost** and **Scikit-Learn**: For model training and tuning  
+- **ucimlrepo API**: For accessing the UCI dataset programmatically  
+- **Jupyter Notebook**: For exploratory data analysis and model development  
 
-## Project Demonstration:
+---
+
+## 📺 Project Demonstration
+
 ![Demonstration](msedge_xYJKkdIWwN.gif)
-
 
 ---
 
 ## 🧪 How to Run Locally
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/your-username/your-repository-name.git
    cd your-repository-name
+
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt

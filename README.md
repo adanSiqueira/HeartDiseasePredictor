@@ -81,7 +81,7 @@ Heart disease remains one of the leading causes of death worldwide. A predictive
 
 ## 📺 Project Demonstration
 
-![Demonstration](msedge_xYJKkdIWwN.gif)
+![Demonstration](projectDemo.gif)
 
 ---
 

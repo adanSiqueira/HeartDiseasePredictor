@@ -34,7 +34,7 @@ Once submitted, these values are passed to a machine learning model trained usin
 This page provides multiple interactive visualizations using **Plotly**, enabling users to explore trends and patterns from the dataset, such as:
 - Heart disease distribution by age and sex
 - Relationship between cholesterol or blood pressure and heart disease
-- Blood sugar and ECG pattern analysis
+- Blood sugar and ECG pattern analysis, among others
 
 These charts offer valuable insights into the clinical features correlated with heart conditions.
 

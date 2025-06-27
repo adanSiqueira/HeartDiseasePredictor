@@ -89,7 +89,7 @@ Heart disease remains one of the leading causes of death worldwide. A predictive
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/your-repository-name.git
+   git clone https://github.com/adanSiqueira/HeartDiseasePredictor.git
    cd your-repository-name
 
 2. Install dependencies:

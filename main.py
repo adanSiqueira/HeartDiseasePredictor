@@ -29,8 +29,12 @@ def show_page(pathname):
         return pages.form.layout
     elif pathname == '/charts':
         return pages.charts.layout
-        # return html.P('pages')
+    elif pathname == '/' or pathname == '':  # <- isso trata a homepage
+        return html.Div([
+            html.H3('Use the tabs above to navigate', className='text-center text-dark mb-2 mt-3', style={'fontWeight': '200'}),
+            html.Img(src='/assets/banner.png', style={'width': '100%', 'height': 'auto'})
+        ])
     else:
-        return html.P('homepage')
+        return html.P("Page not found.")  # página não reconhecida
     
-app.run(debug = False)
+app.run(debug = True)

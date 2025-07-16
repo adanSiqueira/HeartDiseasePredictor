@@ -1,4 +1,4 @@
-from dash import Dash, html, dcc
+from dash import html
 from dash.dependencies import Output, Input, State
 import dash_bootstrap_components as dbc
 from app import app

@@ -1,26 +1,20 @@
-# Use official Python slim image
-FROM python:3.10-slim
+FROM python:3.11-slim
 
-# Set environment variables
-ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONUNBUFFERED=1
-
-# Set working directory
 WORKDIR /app
 
-# Install system dependencies
+COPY requirements.txt .
+
 RUN apt-get update && apt-get install -y \
     build-essential \
+    curl \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy app files
-COPY . /app
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Install Python dependencies
-RUN pip install --upgrade pip && pip install -r requirements.txt
+COPY . .
 
-# Expose port used by Dash
 EXPOSE 8050
 
-# Run the app
+# Comando para iniciar a aplicação
 CMD ["python", "main.py"]

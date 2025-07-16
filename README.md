@@ -1,3 +1,4 @@
+![Demonstration](banner.png)
 <h1 align="center">Heart Disease Prediction Dashboard</h1>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue">
@@ -27,7 +28,7 @@ A form-based interface allows users to input patient information such as:
 - Exercise-induced angina
 - ST depression, among others
 
-Once submitted, these values are passed to a machine learning model trained using **LogisticRegression**, which classifies whether the patient is at risk of having heart disease.
+Once submitted, these values are passed to a machine learning model trained using **Logistic Regression**, which classifies whether the patient is at risk of having heart disease.
 
 ### 2. **Graphic Analysis**
 
@@ -42,11 +43,13 @@ These charts offer valuable insights into the clinical features correlated with 
 
 ## 🧠 Model Development and Performance
 
-The initial phase included training and evaluating multiple classification models. After experimentation, **Logistic Regression** proved to be highly effective and was selected for final deployment. The model was trained using a robust pipeline with:
+The initial phase included training and evaluating multiple classification models. After experimentation, **Logistic Regression** was selected for final deployment. The model was trained using a robust pipeline with:
 
 - **StandardScaler** for feature normalization  
 - **Bayesian optimization** (`BayesSearchCV`) for hyperparameter tuning  
 - **Nested cross-validation** for unbiased performance estimation
+
+**Voting Classifier (Soft Voting)**, an ensemble model combining **Logistic Regression**, **Random Forest**, and **XGBoost**, was also tested. After optimizing each model individually, the ensemble model achieved solid performance in identifying heart disease, leveraging the complementary strengths of each individual model.
 
 📈 **Final test set performance (class 1 = heart disease):**
 
@@ -73,7 +76,7 @@ Heart disease remains one of the leading causes of death worldwide. A predictive
 - **Dash** & **Dash Bootstrap Components**: For web app development  
 - **Pandas** & **NumPy**: For data manipulation  
 - **Plotly**: For interactive visualizations  
-- **XGBoost** and **Scikit-Learn**: For model training and tuning  
+- **XGBoost**, **RandomForest**, and **Scikit-Learn**: For model training and tuning  
 - **ucimlrepo API**: For accessing the UCI dataset programmatically  
 - **Jupyter Notebook**: For exploratory data analysis and model development  
 

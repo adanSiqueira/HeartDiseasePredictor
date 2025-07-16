@@ -32,7 +32,7 @@ A form-based interface allows users to input patient information such as:
 - Exercise-induced angina
 - ST depression, among others
 
-Once submitted, these values are passed to a machine learning model trained using **Logistic Regression**, which classifies whether the patient is at risk of having heart disease.
+Once submitted, these values are passed to a machine learning model, which classifies whether the patient is at risk of having heart disease.
 
 ### 2. **Graphic Analysis**
 

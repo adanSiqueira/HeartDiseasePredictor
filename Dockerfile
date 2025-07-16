@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-EXPOSE 8050
+EXPOSE 8080
 
 # Comando para iniciar a aplicação
 CMD ["python", "main.py"]

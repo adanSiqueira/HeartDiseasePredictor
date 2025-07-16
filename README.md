@@ -47,7 +47,7 @@ These charts offer valuable insights into the clinical features correlated with 
 
 ## 🧠 Model Development and Performance
 
-The initial phase included training and evaluating multiple classification models. After experimentation, **Logistic Regression** was selected for final deployment. The model was trained using a robust pipeline with:
+The initial phase included training and evaluating multiple classification models. After experimentation, an Ensembling with **XGBoost**, **Random Forest** and **Logistic Regression** were selected for optimization and final deployment. The model was trainedand optimized  using a robust pipeline with:
 
 - **StandardScaler** for feature normalization  
 - **Bayesian optimization** (`BayesSearchCV`) for hyperparameter tuning  

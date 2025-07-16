@@ -11,6 +11,10 @@
 
 This project presents a dynamic and interactive web application for predicting the risk of heart disease based on clinical data. The model and dashboard are built upon a well-known dataset from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/45/heart+disease), derived from angiographic results of 303 patients at the Cleveland Clinic Foundation, Ohio.
 
+> 🧾 This repository includes the notebook [`Predictor_Model_Development.ipynb`](./Predictor_Model_Development.ipynb), where the entire process of data import, cleaning, transformation, exploration, visualization, and machine learning model development is detailed and reproducible. This ensures transparency and traceability of all steps taken.
+
+> ☁️ Additionally, the project was deployed to the web via **Google Cloud Platform**, using **Google Cloud Run** and **Cloud Build** for automated Docker-based deployment directly from this GitHub repository. This strategy offers fast, scalable, and serverless deployment, simplifying infrastructure management while ensuring that new changes pushed to the repo are continuously integrated and deployed. You can access it on https://heartdiseasepredictor-276412923171.europe-west1.run.app/ .
+
 ---
 
 ## 🔍 Project Overview
@@ -61,8 +65,6 @@ The initial phase included training and evaluating multiple classification model
 
 The model achieved **0.89 recall on class 1**, meaning it correctly identified 89% of patients with heart disease — a crucial metric for medical prediction tasks where false negatives are costly.
 
-The ```model``` folder contains a Jupyter Notebook detailing the model development process, including training, evaluation, and optimization.
-
 ---
 
 ## 🚀 Why This Project Matters
@@ -79,6 +81,7 @@ Heart disease remains one of the leading causes of death worldwide. A predictive
 - **XGBoost**, **RandomForest**, and **Scikit-Learn**: For model training and tuning  
 - **ucimlrepo API**: For accessing the UCI dataset programmatically  
 - **Jupyter Notebook**: For exploratory data analysis and model development  
+- **Google Cloud Platform (Cloud Run + Cloud Build)**: For containerized deployment
 
 ---
 
@@ -92,14 +95,15 @@ Heart disease remains one of the leading causes of death worldwide. A predictive
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/your-repository-name.git
+   git clone https://github.com/adanSiqueira/HeartDiseasePredictor.git
    cd your-repository-name
 
-2. Install dependencies:
+2. **Install requirements.txt**
    ```bash
-   pip install -r requirements.txt
-   
-3. Run the app:
+   pip install requirements.txt
+
+3. **Run Locally**
    ```bash
-   python main.py 
-   
+   python main.py
+
+Or, access the web app deployed on Google Cloud Service at: https://heartdiseasepredictor-276412923171.europe-west1.run.app/

@@ -100,7 +100,7 @@ Heart disease remains one of the leading causes of death worldwide. A predictive
 
 2. **Install requirements.txt**
    ```bash
-   pip install requirements.txt
+   pip install -r requirements.txt
 
 3. **Run Locally**
    ```bash

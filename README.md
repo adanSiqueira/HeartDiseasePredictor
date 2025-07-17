@@ -45,7 +45,7 @@ These charts offer valuable insights into the clinical features correlated with 
 
 ---
 
-## 🧠 Model Development and Performance
+## Model Development and Performance
 
 The initial phase included training and evaluating multiple classification models. After experimentation, an Ensembling with **XGBoost**, **Random Forest** and **Logistic Regression** were selected for optimization and final deployment. The model was trainedand optimized  using a robust pipeline with:
 
@@ -67,7 +67,7 @@ The model achieved **0.89 recall on class 1**, meaning it correctly identified 8
 
 ---
 
-## 🚀 Why This Project Matters
+## Why This Project Matters
 
 Heart disease remains one of the leading causes of death worldwide. A predictive tool like this can help medical professionals, students, and data enthusiasts identify risk patterns more quickly and efficiently. By combining explainable machine learning with a user-friendly interface, this project demonstrates the power of applied AI in healthcare diagnostics and education.
 
@@ -91,7 +91,7 @@ Heart disease remains one of the leading causes of death worldwide. A predictive
 
 ---
 
-## 🧪 How to Run Locally
+## How to Run Locally
 
 1. **Clone the repository:**
    ```bash
